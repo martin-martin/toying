@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Learning RoR with [Railstutorial](https://www.railstutorial.org/book/toy_app#fig-mvc_detailed).
 
-Things you may want to cover:
+I've built this along the tutorial, with the exception that I did a tiny work-ahead by introducing this line:
 
-* Ruby version
+```erb
+<%= @user.microposts.first.content if @user.microposts.first %>
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+in `app/views/users/show.html.erb`, allowing the user's page to load also if the user didn't yet create a post.
+: )
