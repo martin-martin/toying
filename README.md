@@ -10,3 +10,7 @@ I've built this along the tutorial, with the exception that I did a tiny work-ah
 
 in `app/views/users/show.html.erb`, allowing the user's page to load also if the user didn't yet create a post.
 : )
+
+---
+
+It's also live here: https://afternoon-scrubland-93108.herokuapp.com/, just in case.
